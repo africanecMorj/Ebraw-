@@ -5,7 +5,6 @@ export default function Home() {
   const [goods, setGoods] = useState([]);
 
   useEffect(() => {
-    // Fetch goods from the server
     fetch("https://ebraw-server-5d3f.onrender.com/all-goods")
       .then((response) => response.json())
       .then((data) => setGoods(data))
